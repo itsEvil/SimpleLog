@@ -2,6 +2,8 @@
 
 Simple drop in open source library for quick console logging.
 
+![alt text](https://github.com/itsEvil/SimpleLog/blob/master/Capture.PNG?raw=true)
+
 ### How to setup
 
 1. Simply add SLog.cs into your project. 
@@ -13,9 +15,9 @@ Simple drop in open source library for quick console logging.
 Easy and simple configuration.
 
 To modify logger look in 
-=> SLogConfig class for configuration 
-=> SLogColors class for console colors 
-=> SLog.Format() method to change the format used
+- SLogConfig class for configuration
+- SLogColors class for console colors 
+- SLog.Format() method to change the format used
 
 Termination also happens when Fatal(string message, [bool terminate = true]) is called with terminate set to true.
 
