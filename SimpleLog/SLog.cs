@@ -75,6 +75,7 @@ namespace SimpleLog
         /// </summary>
         private static async void Tick()
         {
+            Thread.CurrentThread.IsBackground = true;
             //Keeps thread alive until termination
             while (!_terminating)
             {
