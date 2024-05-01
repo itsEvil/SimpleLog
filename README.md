@@ -6,11 +6,22 @@ Simple drop in open source library for quick console logging.
 
 ### How to setup
 
-1. Simply add SLog.cs into your project. 
-2. Call SLog.Terminate() when closing your application to stop worker thread.
+1. Simply add SLog.cs into your project.
+2. Convert your existing logging method to use this. 
 3. Done!
 
+For applications using Application.CreateBuilder();
+add this line before ```builder.Build();```
+This removes microsoft logging
+```builder.Logging.ClearProviders();```
+
 ### Notes 
+
+
+You no longer have to call SLog.Terminate() when closing your application to stop the loggers worker
+thread as I marked it as a background thread and automatically should close when closing the application.
+
+But you can if you want to stop the logger from working.
 
 Easy and simple configuration.
 
