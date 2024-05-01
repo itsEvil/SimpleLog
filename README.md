@@ -10,7 +10,7 @@ Simple drop in open source library for quick console logging.
 2. Convert your existing logging method to use this. 
 3. Done!
 
-For applications using Application.CreateBuilder();
+For applications using ```Application.CreateBuilder();```
 add this line before ```builder.Build();```
 This removes microsoft logging
 ```builder.Logging.ClearProviders();```
